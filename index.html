@@ -14,8 +14,10 @@
      <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="https://pulseapp.com" class="nav__logo">
-                    <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a> <!-- is there anything unique I need to do with svg?-->
+                <div class="nav__logo">
+                    <a href="https://pulseapp.com" class="nav__logo-anchor">
+                    <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a> <!-- is there anything unique I need to do with svg? Is span class screen-reader the old version of alt tags?-->
+                </div>
                 <div class="nav__block">
                     <button class="nav__button-nav"> <!--Examine at what this does: I think it's a check box effect-->
                     </button>
@@ -178,9 +180,70 @@
  </main>
 
  <footer class="footer">
-    <div class="footer__left"></div>
-    <div class="footer__mid"></div>
-    <div class="footer__bottom"></div>
+    <div class="footer__main">
+        <div class="footer__left">
+            <div class="footer__logo"> <!-- Paragraph?? Bc of span following image on the original? Is span class screen-reader the old version of alt tags?-->
+                <a href="https://pulseapp.com" class="footer__logo-anchor">
+                <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a> 
+            </div>
+            <p>
+                <a href="https://signup.pulseapp.com/plus" class="footer__button">Sign up for a 30-Day Free Trial</a>
+            </p>
+        </div>
+        <div class="footer__right">
+            <ul class="footer__list-left">
+                <li class="footer__list-title">Product</li>
+                <li class="footer__list-item">
+                    <a href="https:pulseapp.com/features">Features</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https:pulseapp.com/pricing">Pricing</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://signup.pulseapp.com">Sign Up</a>
+                </li>
+            </ul>
+            <ul class="footer__list-middle">
+                <li class="footer__list-title">Company</li>
+                <li class="footer__list-item">
+                    <a href="https:pulseapp.com/customer-stories">Customer Stories</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://pulseapp.com/about">About</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://pulseapp.com/contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="footer__list-right">
+                <li class="footer__list-title">Resources</li>
+                <li class="footer__list-item">
+                    <a href="https://pulseapp.com/support">Support</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="https://pulseapp.com/Blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="footer__legal">
+            <div>©2019 Pulseapp.com, Inc. All Rights Reserved |
+                <a href="https://pulseapp.com/terms">Terms of use</a>
+                | 
+                <a href="https://pulseapp.com/privacy">Privacy Policy</a>
+                | 
+                <a href="https://pulseapp.com/eu-privacy">EU Policy</a>
+                <br> Pulse is made by
+                <a href="https://simplefocus.com">Simple Focus</a>.
+                We also make 
+                <a href="https://getballpark.com">Ballpark</a>,
+                <a href="https://sifterapp.com">Sifter</a>, and
+                <a href="https://curated.com">Curated</a>. 
+            </div>
+        </div>
+    </div>
  </footer>
 </body>
 </html>      
