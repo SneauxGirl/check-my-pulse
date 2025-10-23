@@ -2,5 +2,51 @@
 
 /* GENERAL*/
 body, html {
-    font-family: 'Work Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eafaf1;
+    font-family: 'Work Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:#080c16;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+}
+
+.container { /*go study container classes and come back*/
+    padding: 2rem 1.4rem;
+}
+
+.nav {
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__mobile {
+    display: none;
+}
+
+.main   {
+    position:relative;
+    padding: 2rem 1.4rem;
+    border-bottom: 2px solid #d6dae5; /* Apply to Review container*/
+}
+
+.faq {
+    background-color: #fcfcfc;
+}
+
+.footer {
+    background: #080c16;
+    color: #00ad6a;
+    text-decoration: none;
+}
+/* Notes Footer: why aren't the hyperlinks modified - how do I apply to anchor tags specifically? change bottom padding 3rem until 640 */
+
+.footer__list-item {
+    text-decoration: none;
 }
