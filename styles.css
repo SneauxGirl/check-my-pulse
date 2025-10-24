@@ -12,39 +12,57 @@ body, html {
 
 .header {
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-    padding: 0 2rem; 
+.header__block {
+    padding: 3rem 1.5rem;
+    display: flex;
+    max-width: 1200px;
 }
-/* DO NAV LAST - don't get stuck on it - go work on what you know */
-.nav {
-    position: relative;
-    display:flex;
-    flex-wrap: wrap;
+
+/* DO NAV LAST A/N - don't get stuck on it - go work on what you know */
+.nav__block {
+    display: flex;
+    align-content: center;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 
 .nav__logo {
+    display: flex;
+    align-content: center;
     margin-right: 2.5rem;
 }
 
+.nav__button-stripes {
+    display: none;
+}
+
 .nav__list {
+display: flex;
+align-content: center;
+}
+
+.nav__list ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     justify-content: right;
     font-size: 1rem;
     font-weight: 650;
+    margin: 0;
+    padding: 0;
 }
 
-.nav__list li a {
+.nav__list ul li a {
     text-decoration: none;
     color: #00ad6a; /* check color consistency on Pricing - always black or changes why?*/
 }
 
 .nav__mobile {
-    display: none;
+    display:none;
 }
 
 .main   {
