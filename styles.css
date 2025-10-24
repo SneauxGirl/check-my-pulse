@@ -2,7 +2,7 @@
 
 /* GENERAL*/
 body, html {
-    margin: 0;
+    margin: 0; /* gap between */
     padding: 0;
     background: #eafaf1;
     font-family: 'Work Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -14,8 +14,8 @@ body, html {
     position: relative;
 }
 
-.container { /*go study container classes and come back*/
-    padding: 2rem 1.4rem;
+.container {
+    padding: 0 2rem; 
 }
 
 .nav {
@@ -32,21 +32,41 @@ body, html {
 
 .main   {
     position:relative;
-    padding: 2rem 1.4rem;
-    border-bottom: 2px solid #d6dae5; /* Apply to Review container*/
+/* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
 }
 
 .faq {
     background-color: #fcfcfc;
+    margin-bottom: 0;
 }
 
-.footer {
+footer {
     background: #080c16;
     color: #00ad6a;
     text-decoration: none;
+    margin-top: 0;
 }
-/* Notes Footer: why aren't the hyperlinks modified - how do I apply to anchor tags specifically? change bottom padding 3rem until 640 */
 
-.footer__list-item {
+.footer__column ul {
+    list-style: none;
+    color: #fcfcfc;
+}    
+
+.footer__column ul li a{
     text-decoration: none;
+    color: #00ad6a;
 }
+
+.footer__legal{
+    color: #d6dae5;
+}
+
+.footer__legal-links a {
+    color: #d6dae5;
+}
+
+.footer__column a:hover,
+.footer__legal-links a:hover {
+    color: #fcfcfc;
+}
+/* change bottom padding 3rem until 640 */
