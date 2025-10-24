@@ -4,7 +4,7 @@
 body, html {
     margin: 0; /* gap between */
     padding: 0;
-    background: #eafaf1;
+    background-color: #eafaf1;
     font-family: 'Work Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
     color:#080c16;
     scroll-behavior: smooth;
@@ -17,13 +17,30 @@ body, html {
 .container {
     padding: 0 2rem; 
 }
-
+/* DO NAV LAST - don't get stuck on it - go work on what you know */
 .nav {
     position: relative;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+}
+
+.nav__logo {
+    margin-right: 2.5rem;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.nav__list li a {
+    text-decoration: none;
+    color: #00ad6a; /* check color consistency on Pricing - always black or changes why?*/
 }
 
 .nav__mobile {
@@ -32,8 +49,26 @@ body, html {
 
 .main   {
     position:relative;
-/* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
 }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1200px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.hero__content {
+    max-width: 600px;
+}
+
+
+/* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
+
 
 .faq {
     background-color: #fcfcfc;
