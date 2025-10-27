@@ -23,12 +23,12 @@ body, html {
 }
 
 /* DO NAV LAST A/N - don't get stuck on it - go work on what you know 
-What's not working: space between*/
+What's not working: space between - use flex grow??*/
 .nav__block {
     position: relative;
     display: flex;
-    align-content: flex-start;
-    justify-content: space-between; /*why isn't this working??*/
+    align-content: flex-start; 
+    justify-content: space-between;
     background-color: #080c16;
     max-width: 1200px;
 }
@@ -73,17 +73,21 @@ display: flex;
 
 .hero__container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0px;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
     background-color: aqua;
 }
 
 .hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     max-width: 600px;
     background-color: bisque;
+
 }
 
 .hero__content h1 {
@@ -100,6 +104,50 @@ display: flex;
 
 .hero__content p {
     margin-bottom: 0;
+}
+
+.plan__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #080c16;
+    line-height: 150%;
+}
+
+.cta a{
+    text-decoration: none;
+
+}
+.cta h2 {
+    color: #00ad6a;
+}
+
+.basics {
+    font-size: 1rem;
+    background-color: brown;
+    flex-basis: 1;
+}
+
+.basics h2 {
+    font-size: 1.3rem;
+    font-weight: 620;
+}
+
+#now {
+    text-decoration: underline;
+    color: #080c16;
+}
+
+.business {
+    flex-basis: 1;
+}
+
+.business__container { 
+    border: 2px;
+    border-color: #080c16;
+    border-radius: 2px, 2px, 0px, 0px;
+    background-color: rgb(198, 111, 198);
 }
 
 .buiness__container ul li:before { /*checkbox image - but how*/
