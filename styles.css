@@ -15,27 +15,21 @@ body, html {
     display: flex;
     align-content: center;
     justify-content: center;
-    background-color: red;
-    padding: 0;
     margin: 0;
-    padding: 3rem 1.5rem;
-    display: flex;
+    padding: 3rem 0;
 }
 
-/* DO NAV LAST A/N - don't get stuck on it - go work on what you know 
-What's not working: space between - use flex grow??*/
+/* Nav Lg Working - to do: Tab and Small*/
 .nav__block {
-    position: relative;
     display: flex;
-    align-content: flex-start; 
     justify-content: space-between;
-    background-color: #080c16;
-    max-width: 1200px;
+    max-width: 1150px;
+    width: 100%;
 }
 .nav__logo {
     display: flex;
     align-items: center;
-    margin-right: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .nav__button-stripes {
@@ -43,15 +37,15 @@ What's not working: space between - use flex grow??*/
 }
 
 .nav__list {
-display: flex;
+    display: flex;
+    padding-left: 5rem;
 }
 
-.nav__list ul {
-    list-style: none;
+.nav__list ul { 
     display: flex;
     align-items: center;
-    gap: 4rem;
-    justify-content: right;
+    gap: 2.4rem;
+    list-style: none;
     font-size: 1rem;
     font-weight: 650;
     margin: 0;
@@ -61,6 +55,11 @@ display: flex;
 .nav__list ul li a {
     text-decoration: none;
     color: #00ad6a; /* check color consistency on Pricing - always black or changes why?*/
+}
+
+.nav__large-signUp {
+    border: 2px solid,#00ad6a;
+    padding: 0.45rem 1rem;
 }
 
 .nav__mobile {
@@ -76,7 +75,6 @@ display: flex;
     justify-content: center;
     padding-bottom: 2.5rem;
     margin-bottom: 2.5rem;
-    background-color: aqua;
 }
 
 .hero__content {
@@ -86,8 +84,6 @@ display: flex;
     justify-content: center;
     text-align: center;
     max-width: 600px;
-    background-color: bisque;
-
 }
 
 .hero__content h1 {
@@ -106,31 +102,52 @@ display: flex;
     margin-bottom: 0;
 }
 
-.plan__container {
+.cta {
+    background-color:chartreuse;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+}
+
+.cta a {
+    text-decoration: none;
     color: #080c16;
     line-height: 150%;
+    font-size: 1rem;
+    font-weight: 350;
 }
 
-.cta a{
-    text-decoration: none;
-
+.plan__container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
 }
+
+.plan__blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 350;
+    background-color: darkorange;
+}
+
+
 .cta h2 {
     color: #00ad6a;
 }
 
 .basics {
-    font-size: 1rem;
-    background-color: brown;
-    flex-basis: 1;
+    padding: 0 2rem;
+    background-color: burlywood;
+}
+
+.basics ul {
+    padding-left: 1rem;
 }
 
 .basics h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 620;
 }
 
@@ -139,21 +156,80 @@ display: flex;
     color: #080c16;
 }
 
-.business {
-    flex-basis: 1;
-}
-
-.business__container { 
-    border: 2px;
-    border-color: #080c16;
-    border-radius: 2px, 2px, 0px, 0px;
-    background-color: rgb(198, 111, 198);
-}
+.business__container {
+    border: 1px solid #00ad6a;
+    background-color: #fcfcfc;
+    padding: 0 2rem;
+    }
 
 .buiness__container ul li:before { /*checkbox image - but how*/
-font-size: 12px;
+    font-size: 12px;
 }
 
+.business__banner {
+    color: #fcfcfc ;
+    text-transform: uppercase;
+    font-size: 0.725rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.15rem;
+    background-color: #00ad6a;
+    border: 1px solid #00ad6a;
+    border-radius: 12px 12px 0 0;
+}
+
+.business__plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+.business__plan h2 {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.business__price {
+    font-size: 1.5rem;
+    font-weight: 250;
+    margin: 1rem;
+}
+
+.business__button {
+    border: 2px solid #1fe374;
+    background-color: #1fe374;
+    padding: 0.5rem 0.5rem;
+    width: 175px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* hover effect */
+
+.business__tagline {
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight:bold;
+    letter-spacing: 0.1rem;
+}
+
+.business__button-mobile {
+    display: none;
+}
+
+.premium__container {
+    padding: 0 2rem; 
+}
+
+.premium__button-mobile {
+    display: none;
+}
 /* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
 
 
