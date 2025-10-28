@@ -276,8 +276,39 @@ body, html {
     margin-bottom: 0;
 }
 
+.review {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border: 1px solid #d6dae5;
+}
 
+.review__container {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    max-width: 800px
+}
 
+.review__blockquote {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+    
+.review__cite {
+    color: #00ad6a;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 650;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    align-items: center;
+}
 /* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
 
 
