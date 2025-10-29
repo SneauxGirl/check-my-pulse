@@ -2,7 +2,7 @@
 
 /* GENERAL*/
 body, html {
-    margin: 0; /* gap between */
+    margin: 0;
     padding: 0;
     background-color: #eafaf1;
     font-family: 'Work Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -16,10 +16,18 @@ body, html {
     align-content: center;
     justify-content: center;
     margin: 0;
-    padding: 3rem 0;
+    padding: 3rem 1.5rem;
 }
 
-/* Nav Lg Working - to do: Tab and Small*/
+@media screen and (max-width: 750px) {
+    header {
+        background-color: #fcfcfc;
+        padding: none;
+    }
+}
+/* how to get rid of padding?? */
+
+/* Nav Lg Working - to do: Tab and Small - 760ish break */
 .nav__block {
     display: flex;
     justify-content: space-between;
@@ -35,6 +43,23 @@ body, html {
 .nav__button-stripes {
     display: none;
 }
+@media screen and (max-width: 750px) {
+    .nav__button-stripes {
+        display: flex;
+        align-items: center;
+        justify-items: end;
+        padding: 0;
+        margin: 0
+    }
+}
+
+.nav__button-stripes img {
+    max-width: 35px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+/*remove horizontal padding and border from image and how to toggle between menus? */
 
 .nav__list {
     display: flex;
@@ -54,7 +79,17 @@ body, html {
 
 .nav__list ul li a {
     text-decoration: none;
-    color: #00ad6a; /* check color consistency on Pricing - always black or changes why?*/
+    color: #00ad6a;
+}
+
+/* difference between hover and focus? */
+.nav__list ul li a:hover 
+.nav__list ul li a:focus {
+    color:#080c16;
+}
+
+#pricing {
+    color: #080c16;
 }
 
 .nav__large-signUp {
@@ -62,9 +97,28 @@ body, html {
     padding: 0.45rem 1rem;
 }
 
-.nav__mobile {
-    display:none;
+/* Animation?? How do I move this up and to the right and set the background to gray?
+.nav__large-signUp:hover,
+.nav__large-signUp:focus {
+    animation: ;
+} */
+
+@media screen and (max-width: 750px) {
+    .nav__list {
+        display: none;
+    }
 }
+
+.nav__mobile {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .nav__mobile {
+        display: flex;
+    }
+} /* needs help with weird toggle button */
+
 
 .main   {
     position:relative;
@@ -78,6 +132,15 @@ body, html {
     margin-bottom: 2.5rem;
 }
 
+
+@media screen and (max-width: 750px) {
+    .hero__container {
+        border-top: 1px solid #d6dae5;
+        display: flex;
+        justify-content: left;
+    }
+}
+
 .hero__content {
     display: flex;
     flex-direction: column;
@@ -86,6 +149,15 @@ body, html {
     text-align: center;
     max-width: 600px;
 }
+
+@media screen and (max-width: 1000px) {
+    .hero__content {
+        display: flex;
+        align-items: start;
+        text-align: left;
+    }
+}
+
 
 .hero__content h1 {
     margin: 0; 
@@ -97,10 +169,20 @@ body, html {
 .hero__content p {
     font-size: 1.1rem;
     line-height: 150%;
+    margin-bottom: 0;
 }
 
-.hero__content p {
-    margin-bottom: 0;
+@media screen and (max-width: 750px) {
+    .hero__content h1 {
+        font-size: 3rem;
+        padding: 2rem 0 1.5rem 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hero__content br {
+        display: none;
+    }
 }
 
 .cta {
