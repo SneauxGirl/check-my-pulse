@@ -312,10 +312,12 @@ body, html {
 .faq {
     border-top: 1px solid #d6dae5;
     background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
 }
 
 .faq__container {
-    margin: 6rem;
+    margin: 6rem 1.5rem 4rem 1.5rem;
     padding: 0;
     max-width: 1200px;
 }
@@ -329,7 +331,7 @@ body, html {
 .faq__container ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
     padding: 1.5rem 0;
     margin: 0;
@@ -339,10 +341,11 @@ body, html {
     flex: 1 1 auto;
     line-height: 1.6rem;
     padding: 1.1rem 0;
+    max-width: 580px;
 }
 
 .faq__container h3 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin: 0;
 }
 
