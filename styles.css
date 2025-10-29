@@ -116,6 +116,10 @@ body, html {
     font-weight: 350;
 }
 
+.cta h2 {
+    color: #00ad6a;
+}
+
 .plan__container {
     display: flex;
     justify-content: center;
@@ -124,22 +128,26 @@ body, html {
 
 .plan__blocks {
     display: flex;
-    justify-items: space-between;
     align-items: center;
     line-height: 150%;
     font-size: 1rem;
     font-weight: 350;
 }
 
-.cta h2 {
-    color: #00ad6a;
-}
-
-.basics {
-    padding: 0 2rem;
+.basics__column,
+.business__column,
+.premium__column {
     display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    height: auto;
 }
+/* STILL NOT quite balanced - Issue with Basics. Media query to max-width 1000px colummn align-items @ 950px 100% width */
 
+.basics__container {
+    padding: 0 2rem;
+}
 
 .basics ul {
     padding-left: 1rem;
@@ -359,21 +367,76 @@ footer {
     background: #080c16;
     color: #00ad6a;
     text-decoration: none;
-    margin-top: 0;
+    margin: 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__container {
+    max-width: 1200px;
+    padding: 0 1.5rem 0 1.5rem;
+    width: 100%
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    width: 100%;
+    padding: 6rem 0 6rem 0;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer__logo img{
+    width: 160px;
+}
+/*media query - shrinks to width: auto at 600px*/
+
+.footer__left p a {
+    color: #080c16;
+    text-decoration: none;
+    border: 2px solid #1fe374;
+    background-color: #1fe374;
+    padding: 1rem 2rem;
+    margin: 0;
+    width: 175px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer__column {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.1rem;
 }
 
 .footer__column ul {
     list-style: none;
     color: #fcfcfc;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }    
 
 .footer__column ul li a{
     text-decoration: none;
-    color: #00ad6a;
+    color: #1fe374;
+    font-weight: 300;
 }
 
-.footer__legal{
+.footer__bottom {
     color: #d6dae5;
+    font-size: .75rem;
+    opacity: 50%;
+    margin: .8rem 0;
 }
 
 .footer__legal-links a {

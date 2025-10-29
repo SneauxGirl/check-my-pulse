@@ -17,7 +17,7 @@
     <!-- HEADER-->
         <nav class="nav__block">
             <div class="nav__logo">
-                <a href="#https://pulseapp.com">
+                <a href="https://pulseapp.com">
                 <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a>
             </div>
             <div class="nav__button-stripes">
@@ -64,19 +64,21 @@
 
         <section class="cta">
             <div class="plan__container"> <!-- look into these containers - can I lable them better?, difference between section and div re: responsive actions-->
-                <div class="plan__blocks"> <!-- still can't get these to size evenly - belive it should be flex-basis/shrink.grow but how??-->
+                <div class="plan__blocks"> 
                     <section class="basics">
-                        <div class="basics__container">
-                            <h2>These are what we call the Pulse Basics. They're what every customer gets.</h2> 
-                            <ul>
-                                <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-                                <li>Forecast growth with recurring income or expenses that scale automatically</li>
-                                <li>Works with any currency</li>
-                                <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
-                                <li>Toggle entries and accounts on and off to game out different scenarios</li>
-                            </ul>
-                            <p class="basics__tagline">Just need the Pulse Basics?<br>
-                            <a href="https://create.pulseapp.com/signup/" id="now">Get them now</a> for $29 per month.</p>
+                        <div class="basics__column">
+                            <div class="basics__container">
+                                <h2>These are what we call the Pulse Basics. They're what every customer gets.</h2> 
+                                <ul>
+                                    <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                                    <li>Forecast growth with recurring income or expenses that scale automatically</li>
+                                    <li>Works with any currency</li>
+                                    <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
+                                    <li>Toggle entries and accounts on and off to game out different scenarios</li>
+                                </ul>
+                                <p class="basics__tagline">Just need the Pulse Basics?<br>
+                                <a href="https://create.pulseapp.com/signup/" id="now">Get them now</a> for $29 per month.</p>
+                            </div>
                         </div>
                     </section>
                     <section class="business">
@@ -166,52 +168,53 @@
     </section>
  </main>
  <footer>
-    <div class="container">
-        <div class="footer__left">
-            <div class="footer__logo"> <!-- Paragraph?? Bc of span following image on the original? Is span class screen-reader the old version of alt tags?-->
-                <a href="https://pulseapp.com">
-                <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a> 
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__left">
+                <div class="footer__logo"> <!-- Paragraph?? Bc of span following image on the original? Is span class screen-reader the old version of alt tags?-->
+                    <a href="https://pulseapp.com">
+                    <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a> 
+                </div>
+                <p>
+                    <a href="https://signup.pulseapp.com/plus">Sign up for a Free 30-Day Trial</a> <!-- May need IDs on these two anchors?-->
+                </p>
             </div>
-            <p>
-                <a href="https://signup.pulseapp.com/plus">Sign up for a 30-Day Free Trial</a> <!-- May need IDs on these two anchors?-->
-            </p>
-        </div>
-        <div class="footer__column">
-            <ul>
-                <li>Product</li>
-                <li><a href="https://pulseapp.com/features">Features</a></li>
-                <li><a href="https://pulseapp.com/pricing">Pricing</a></li>
-                <li><a href="https://signup.pulseapp.com">Sign Up</a></li>
-            </ul>
-            <ul>
-                <li>Company</li>
-                <li><a href="https://pulseapp.com/customer-stories">Customer Stories</a></li>
-                <li><a href="https://pulseapp.com/about">About</a></li>
-                <li><a href="https://pulseapp.com/contact">Contact</a></li>
-            </ul>
-            <ul>
-                <li>Resources</li>
-                <li><a href="https://help.pulseapp.com">Support</a></li>
-                <li><a href="https://pulseapp.com/blog">Blog</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="footer__legal">
-            <div class="footer__legal-links">©2019 Pulseapp.com, Inc. All Rights Reserved |
-                <a href="https://pulseapp.com/terms">Terms of use</a>
-                | 
-                <a href="https://pulseapp.com/privacy">Privacy Policy</a>
-                | 
-                <a href="https://pulseapp.com/eu-privacy">EU Policy</a>
-                <br> Pulse is made by
-                <a href="https://simplefocus.com">Simple Focus</a>.
-                We also make 
-                <a href="https://getballpark.com">Ballpark</a>,
-                <a href="https://sifterapp.com">Sifter</a>, and
-                <a href="https://curated.com">Curated</a>. 
+            <div class="footer__column">
+                <ul>
+                    <li>Product</li>
+                    <li><a href="https://pulseapp.com/features">Features</a></li>
+                    <li><a href="https://pulseapp.com/pricing">Pricing</a></li>
+                    <li><a href="https://signup.pulseapp.com">Sign Up</a></li>
+                </ul>
+                <ul>
+                    <li>Company</li>
+                    <li><a href="https://pulseapp.com/customer-stories">Customer Stories</a></li>
+                    <li><a href="https://pulseapp.com/about">About</a></li>
+                    <li><a href="https://pulseapp.com/contact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>Resources</li>
+                    <li><a href="https://help.pulseapp.com">Support</a></li>
+                    <li><a href="https://pulseapp.com/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+        <div class="footer__bottom">
+            <div class="footer__legal">
+                <div class="footer__legal-links">©2019 Pulseapp.com, Inc. All Rights Reserved |
+                    <a href="https://pulseapp.com/terms">Terms of use</a>
+                    | 
+                    <a href="https://pulseapp.com/privacy">Privacy Policy</a>
+                    | 
+                    <a href="https://pulseapp.com/eu-privacy">EU Policy</a>
+                    <br> Pulse is made by
+                    <a href="https://simplefocus.com">Simple Focus</a>.
+                    We also make 
+                    <a href="https://getballpark.com">Ballpark</a>,
+                    <a href="https://sifterapp.com">Sifter</a>, and
+                    <a href="https://curated.com">Curated</a>. 
+                </div>
             </div>
         </div>
     </div>
