@@ -62,7 +62,6 @@
             </div>
            </section>
 
-
         <section class="cta">
             <div class="plan__container"> <!-- look into these containers - can I lable them better?, difference between section and div re: responsive actions-->
                 <div class="plan__blocks"> <!-- still can't get these to size evenly - belive it should be flex-basis/shrink.grow but how??-->
@@ -82,7 +81,7 @@
                     </section>
                     <section class="business">
                         <div class="business__column">
-                            <a href="https://signup.pulseapp.com/plus" target="_blank"> <!-- NOTE: hover:pointer on the entire section, extra padding-->
+                            <a href="https://signup.pulseapp.com/plus" target="_blank"> <!-- extra padding-->
                                 <div class="business__banner">Recommended</div>
                                 <div class="business__container">
                                     <div class="business__plan">
@@ -91,7 +90,7 @@
                                         <div class="business__button">Sign Up Now</div> <!-- not actually a button ,location changes -->
                                         <p class="business__tagline">You get pulse basics, plus:</p> <!--Caps case-->
                                     </div>
-                                    <ul> <!--green check marks rather than black bullets, they do these as a span inside the li to snug the spacing-->
+                                    <ul>
                                         <li><span>Manage cash flow across multiple financial accounts</span></li>
                                         <li><span>Invite your investors, book keeper, or management team to see reports or manage cash flow</span></li>
                                         <li><span>Integrate with QuickBooks Online for more accurate cash flow</span></li>
@@ -135,31 +134,34 @@
     </div>
 
     <section class="faq">
-        <div class="container"> <!-- Pay attention to grouping order/direction on flex-->
-            <div class="faq__block">
-                <div class="faq__header">How does the 30-day free trial work?</div>
-                <p class="faq__answer">You can use Pulse absolutely free for 30 days. After 30 days, we will charge the credit card you used when you sign up. If you choose to cancel your account before your trial ends, your card will not be charged.</p>
-            </div>
-            <div class="faq__block">
-                <div class="faq__header">If I upgrade an existing account, do I get another free trial?</div>
-                <p class="faq__answer">Brand new accounts are the only ones eligible for a 30-day free trial. If you upgrade an existing account, your credit card will be billed the new amount on the date of your next billing cycle.</p>
-            </div>            
-            <div class="faq__block">
-                <div class="faq__header">What is a “Financial Account”?</div>
-                <p class="faq__answer">Financial Accounts are a grouping of income and expense items that can be used for tracking or reporting purposes.<br><br>They're designed to be flexible and can be used to differentiate between bank accounts, companies, individuals or between personal and business entries.</p>
-            </div>
-                <div class="faq__block">
-                <div class="faq__header">Do I have to commit to a long-term contract?</div>
-                <p class="faq__answer">No. There is no contract when you use Pulse, other than agreeing to our Terms of Service.</p>
-            </div>
-                <div class="faq__block">
-                <div class="faq__header">Will I be able to cancel my account if I don't use Pulse?</div>
-                <p class="faq__answer">Yes - you can cancel your account at any time. To cancel your account, go to your billing page and click on “Please cancel my account” at the bottom of the page. The account owner is the only one who can cancel an account. An email request to delete an account is not considered cancellation.</p>
-            </div>
-                <div class="faq__block">
-                <div class="faq__header">What types of payments do you accept?</div>
+        <div class="faq__container"> <!-- Pay attention to grouping order/direction on flex-->
+            <h2>FAQ</h2>
+            <ul>
+                <li>
+                    <h3>How does the 30-day free trial work?</h3>
+                    <p class="faq__answer">You can use Pulse absolutely free for 30 days. After 30 days, we will charge the credit card you used when you sign up. If you choose to cancel your account before your trial ends, your card will not be charged.</p>
+                </li>
+                <li>
+                    <h3>If I upgrade an existing account, do I get another free trial?</h3>
+                    <p class="faq__answer">Brand new accounts are the only ones eligible for a 30-day free trial. If you upgrade an existing account, your credit card will be billed the new amount on the date of your next billing cycle.</p>
+                </li>
+                <li>
+                    <h3>What is a “Financial Account”?</h3>
+                    <p class="faq__answer">Financial Accounts are a grouping of income and expense items that can be used for tracking or reporting purposes.<br><br>They're designed to be flexible and can be used to differentiate between bank accounts, companies, individuals or between personal and business entries.</p>
+                </li>
+                <li>
+                    <h3>Do I have to commit to a long-term contract?</h3>
+                    <p class="faq__answer">No. There is no contract when you use Pulse, other than agreeing to our Terms of Service.</p>
+                </li>
+                <li>
+                    <h3>Will I be able to cancel my account if I don't use Pulse?</h3>
+                    <p class="faq__answer">Yes - you can cancel your account at any time. To cancel your account, go to your billing page and click on “Please cancel my account” at the bottom of the page. The account owner is the only one who can cancel an account. An email request to delete an account is not considered cancellation.</p>
+                </li>
+                <li>
+                    <h3>What types of payments do you accept?</h3>
                 <p class="faq__answer">We accept payments made online using Visa, Mastercard, Discover, and American Express.</p>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
  </main>

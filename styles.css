@@ -68,6 +68,7 @@ body, html {
 
 .main   {
     position:relative;
+    margin: 0;
 }
 
 .hero__container{
@@ -130,7 +131,6 @@ body, html {
     font-weight: 350;
 }
 
-
 .cta h2 {
     color: #00ad6a;
 }
@@ -158,7 +158,7 @@ body, html {
 .business__container {
     border: 1px solid #00ad6a;
     background-color: #fcfcfc;
-    }
+}
 
 .business__banner {
     color: #fcfcfc;
@@ -281,7 +281,6 @@ body, html {
     justify-content: center;
     justify-items: center;
     align-content: center;
-    border: 1px solid #d6dae5;
 }
 
 .review__container {
@@ -309,12 +308,48 @@ body, html {
     text-align: center;
     align-items: center;
 }
-/* Apply to Review container:   something like border-bottom: 2px solid #d6dae5; */
-
 
 .faq {
+    border-top: 1px solid #d6dae5;
     background-color: #fcfcfc;
-    margin-bottom: 0;
+}
+
+.faq__container {
+    margin: 6rem;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.faq__container h2 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+
+.faq__container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+.faq__container ul li {
+    flex: 1 1 auto;
+    line-height: 1.6rem;
+    padding: 1.1rem 0;
+}
+
+.faq__container h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.faq__container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 0;
 }
 
 footer {
