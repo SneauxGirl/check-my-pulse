@@ -24,7 +24,7 @@ body, html {
 
 /* Header  - get rid of padding-bottom - but where is it coming from??? */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     header {
         background-color: #fcfcfc;
         padding: 1.5rem 0 0 0;
@@ -47,7 +47,7 @@ body, html {
 .nav__button-stripes {
     display: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .nav__button-stripes {
         display: flex;
         align-items: center;
@@ -109,7 +109,7 @@ body, html {
     animation: ;
 } */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .nav__list {
         display: none;
     }
@@ -119,7 +119,7 @@ body, html {
     display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .nav__mobile {
         display: flex;
     }
@@ -139,7 +139,7 @@ body, html {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .hero__container {
         border-top: 1px solid #d6dae5;
         display: flex;
@@ -181,7 +181,7 @@ body, html {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .hero__content h1 {
         font-size: 3rem;
         padding: 2rem 0 1.5rem 0;
@@ -436,7 +436,6 @@ body, html {
     margin: 0;
 }
 
-
 .faq__container ul {
     display: flex;
     flex-wrap: wrap;
@@ -536,17 +535,17 @@ footer {
 
 @media screen and (max-width: 750px) {
     .footer__left p a {
-    color: #080c16;
-    text-decoration: none;
-    border: 2px solid #1fe374;
-    background-color: #1fe374;
-    padding: 1rem auto;
-    margin: 0.5rem;
-    max-width: 750px;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
+        color: #080c16;
+        text-decoration: none;
+        border: 2px solid #1fe374;
+        background-color: #1fe374;
+        padding: 1rem auto;
+        margin: 0.5rem;
+        /* max-width: 750px; */
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
     }
 }
  /* how do I make this expand? */
