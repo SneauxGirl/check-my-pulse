@@ -8,7 +8,10 @@ body, html {
     font-family: 'Work Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
     color:#080c16;
     scroll-behavior: smooth;
+    min-width: 486px; 
 }
+
+/*how do I set a min-width for the whole site? */
 
 .header {
     position: relative;
@@ -19,15 +22,16 @@ body, html {
     padding: 3rem 1.5rem;
 }
 
+/* Header  - get rid of padding-bottom - but where is it coming from??? */
+
 @media screen and (max-width: 750px) {
     header {
         background-color: #fcfcfc;
-        padding: none;
+        padding: 1.5rem 0 0 0;
     }
 }
-/* how to get rid of padding?? */
 
-/* Nav Lg Working - to do: Tab and Small - 760ish break */
+/* Nav Lg Working - to do: Tab and Small - 750 and 1000 break */
 .nav__block {
     display: flex;
     justify-content: space-between;
@@ -59,12 +63,14 @@ body, html {
     margin: 0;
     padding: 0;
 }
-/*remove horizontal padding and border from image and how to toggle between menus? */
+/* remove horizontal padding and border from image and how to toggle between menus? */
 
 .nav__list {
     display: flex;
     padding-left: 5rem;
+    min-width: 540px;
 }
+/* how to make this solid and slide under the logo - wrap of some sort?? */
 
 .nav__list ul { 
     display: flex;
@@ -138,6 +144,8 @@ body, html {
         border-top: 1px solid #d6dae5;
         display: flex;
         justify-content: left;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -155,9 +163,10 @@ body, html {
         display: flex;
         align-items: start;
         text-align: left;
+        padding: 0 1.5rem;
+        max-width: 1000px;
     }
 }
-
 
 .hero__content h1 {
     margin: 0; 
@@ -216,6 +225,15 @@ body, html {
     font-weight: 350;
 }
 
+@media screen and (max-width: 1000px) {
+    .plan__blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+}
+
 .basics__column,
 .business__column,
 .premium__column {
@@ -225,7 +243,8 @@ body, html {
     flex: 1 1 auto;
     height: auto;
 }
-/* STILL NOT quite balanced - Issue with Basics. Media query to max-width 1000px colummn align-items @ 950px 100% width */
+
+/* STILL NOT quite balanced - Issue with Basics. Also need to left-align each */
 
 .basics__container {
     padding: 0 2rem;
@@ -386,7 +405,7 @@ body, html {
 .review__blockquote {
     font-size: 1.5rem;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
     
 .review__cite {
@@ -426,6 +445,7 @@ body, html {
     padding: 1.5rem 0;
     margin: 0;
 }
+/* these are not shrinking the way I want them too */
 
 .faq__container ul li {
     flex: 1 1 auto;
@@ -469,16 +489,37 @@ footer {
     padding: 6rem 0 6rem 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* address spacing at 750-1000 */
+
 .footer__left {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
+@media screen and (max-width: 1000px) {
+    .footer__left {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
 .footer__logo img{
     width: 160px;
 }
-/*media query - shrinks to width: auto at 600px*/
+
+@media screen and (max-width: 750px) {
+    .footer__logo img{
+    width: 120px;
+}
+}
 
 .footer__left p a {
     color: #080c16;
@@ -493,10 +534,44 @@ footer {
     font-weight: 600;
 }
 
+@media screen and (max-width: 750px) {
+    .footer__left p a {
+    color: #080c16;
+    text-decoration: none;
+    border: 2px solid #1fe374;
+    background-color: #1fe374;
+    padding: 1rem auto;
+    margin: 0.5rem;
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    }
+}
+ /* how do I make this expand? */
+
 .footer__column {
     display: flex;
     gap: 2rem;
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__column {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer__column {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 1.5rem;
+    }
 }
 
 .footer__column ul {
@@ -518,8 +593,16 @@ footer {
     color: #d6dae5;
     font-size: .75rem;
     opacity: 50%;
+    line-height: 1.1rem;
     margin: .8rem 0;
 }
+
+@media screen and (max-width: 750px) {
+    .footer__bottom {
+        padding: 0 0 5rem 0;
+    }
+}
+/* figure out correct padding at each size */
 
 .footer__legal-links a {
     color: #d6dae5;
@@ -529,4 +612,3 @@ footer {
 .footer__legal-links a:hover {
     color: #fcfcfc;
 }
-/* change bottom padding 3rem until 640 */
