@@ -435,12 +435,12 @@ premium__list {
     max-width: 1200px;
 }
 
-.faq__container h2 {
+.faq__header {
     font-size: 2.8rem;
     margin: 0;
 }
 
-.faq__container ul {
+.faq__list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -450,19 +450,19 @@ premium__list {
 }
 /* these are not shrinking the way I want them too */
 
-.faq__container ul li {
+.faq__list-item{
     flex: 1 1 auto;
     line-height: 1.6rem;
     padding: 1.1rem 0;
     max-width: 580px;
 }
 
-.faq__container h3 {
+.faq__question {
     font-size: 1.25rem;
     margin: 0;
 }
 
-.faq__container p {
+.faq__answer {
     font-size: 1.1rem;
     font-weight: 300;
     margin: 0;
@@ -514,14 +514,8 @@ footer {
     }
 }
 
-.footer__logo img{
-    width: 160px;
-}
-
-@media screen and (max-width: 750px) {
-    .footer__logo img{
-    width: 120px;
-}
+.footer__logo-img{
+    width: 140px;
 }
 
 .footer__left p a {
@@ -537,7 +531,7 @@ footer {
     font-weight: 600;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
     .footer__left p a {
         color: #080c16;
         text-decoration: none;
@@ -545,7 +539,6 @@ footer {
         background-color: #1fe374;
         padding: 1rem auto;
         margin: 0.5rem;
-        /* max-width: 750px; */
         width: 100%;
         text-align: center;
         font-size: 1rem;
