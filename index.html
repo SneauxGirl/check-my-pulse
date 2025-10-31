@@ -12,28 +12,30 @@
 <!-- TEST EVERY LINK -->
                                                                                                                                                                 
      <header class="header">
-        <!-- <div><a href="https://pulseapp.com/pricing#content" class="header__skip"></a>Skip to Content</div> 
-         The heck is this and why. I think it's old.-->
     <!-- HEADER-->
         <nav class="nav__block">
             <div class="nav__logo">
-                <a href="https://pulseapp.com">
-                <img src="./Images/pulse-logo.svg" alt="Pulse logo"></a>
+                <a href="https://pulseapp.com" class="nav__logo-imgLink">
+                <img src="./Images/pulse-logo.svg" alt="Pulse logo" class="nav__logo-img"></a>
             </div>
-            <div class="nav__button-stripes">
-                <button>
-                    <img src="/Images/stripe button.png" alt="stripe button">
+            <div class="nav__large-button-container">
+                <button class=nav__large-button>
+                    <img src="/Images/stripe button.png" alt="stripe button" class="nav__large-button-img">
                 </button> <!--Examine at what this does and where it's actually at in the code: I think it's a check box effect, possibly not a real button-->
             </div>
         <!-- NAV LARGE LIST-->
-            <div class="nav__list">
-                <ul>
-                    <li><a href="https://pulseapp.com/features">Features</a></li>
-                    <li><a href="https://pulseapp.com/customer-stories">Customer Stories</a></li>
-                    <li><a href="https://pulseapp.com/pricing" id="pricing">Pricing</a></li>
-                    <li><a href="https://pulseapp.com/blog">Blog</a></li>
+            <div class="nav__large">
+                <ul class="nav__large-list">
+                    <li class="nav__large-link">
+                        <a href="https://pulseapp.com/features" class="nav__large-anchor">Features</a></li>
+                    <li class="nav__large-link">
+                        <a href="https://pulseapp.com/customer-stories" class="nav__large-anchor">Customer Stories</a></li>
+                    <li class="nav__large-link">
+                        <a href="https://pulseapp.com/pricing" class="nav__large-pricing">Pricing</a></li>
+                    <li class="nav__large-link">
+                        <a href="https://pulseapp.com/blog" class="nav__large-anchor">Blog</a></li>
                     <li class="nav__large-signUp">
-                        <a href="https://signup.pulseapp.com/plus" class="button">Sign Up</a>
+                        <a href="https://signup.pulseapp.com/plus" class="nav__large-anchor">Sign Up</a>
                     </li> <!--DUPLICATE??? review making non-buttons identify as buttons, this particular list class??-->
                 </ul>
             </div>
@@ -41,14 +43,14 @@
         <!-- NAV MOBILE -->
         <div class="nav__mobile">
                 <ul class="nav__list">
-                    <li><a href="https://pulseapp.com/features">Features</a></li>
-                    <li><a href="https://pulseapp.com/customer-stories">Customer Stories</a></li>
-                    <li><a href="https://pulseapp.com/pricing">Pricing</a></li>
-                    <li><a href="https://pulseapp.com/blog">Blog</a></li>
-                    <li><a href="https://pulseapp.com/contact">Contact</a></li>
-                    <li><a href="https://help.pulseapp.com">Support</a></li>
+                    <li class="nav__list-link"><a href="https://pulseapp.com/features">Features</a></li>
+                    <li class="nav__list-link"><a href="https://pulseapp.com/customer-stories">Customer Stories</a></li>
+                    <li class="nav__list-link"><a href="https://pulseapp.com/pricing">Pricing</a></li>
+                    <li class="nav__list-link"><a href="https://pulseapp.com/blog">Blog</a></li>
+                    <li class="nav__list-link"><a href="https://pulseapp.com/contact">Contact</a></li>
+                    <li class="nav__list-link"><a href="https://help.pulseapp.com">Support</a></li>
                     <!-- FIGURE OUT THIS NEXT PART: BUTTONS-->
-                    <li><a href="https://signup.pulseapp.com/plus" class="button button-gradient p-4">Sign Up <span class="xs-max:hidden">for a Free 30-Day Trial</span></a></li>
+                    <li class="nav__list-link"><a href="https://signup.pulseapp.com/plus" class="button button-gradient p-4">Sign Up <span class="xs-max:hidden">for a Free 30-Day Trial</span></a></li>
                     <!--how does this button work expanding at different sizes? look at their code and -play around-->
                 </ul>
             </div>
@@ -58,8 +60,8 @@
     <div class="container__main">
         <section class="hero__container">
             <div class="hero__content">
-                <h1>Try Pulse free for <br>30 days.</h1>
-                <p>See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.</p>
+                <h1 class="hero__header">Try Pulse free for <br>30 days.</h1>
+                <p class="hero__blurb">See why Pulse is the best way to monitor your cash flow. Sign up for any plan and try Pulse absolutely free for 30 days.</p>
             </div>
            </section>
 
@@ -69,13 +71,13 @@
                     <section class="basics">
                         <div class="basics__column">
                             <div class="basics__container">
-                                <h2>These are what we call the Pulse Basics. They're what every customer gets.</h2> 
-                                <ul>
-                                    <li>Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
-                                    <li>Forecast growth with recurring income or expenses that scale automatically</li>
-                                    <li>Works with any currency</li>
-                                    <li>See Money In and Money Out, categorize transactions, and run helpful reports</li>
-                                    <li>Toggle entries and accounts on and off to game out different scenarios</li>
+                                <h2 class="basics__header">These are what we call the Pulse Basics. They're what every customer gets.</h2> 
+                                <ul class="basics__list">
+                                    <li class="basics__list-item">Manage cash flow on a daily, weekly, monthly, or yearly basis</li>
+                                    <li class="basics__list-item">Forecast growth with recurring income or expenses that scale automatically</li>
+                                    <li class="basics__list-item">Works with any currency</li>
+                                    <li class="basics__list-item">See Money In and Money Out, categorize transactions, and run helpful reports</li>
+                                    <li class="basics__list-item">Toggle entries and accounts on and off to game out different scenarios</li>
                                 </ul>
                                 <p class="basics__tagline">Just need the Pulse Basics?<br>
                                 <a href="https://create.pulseapp.com/signup/" id="now">Get them now</a> for $29 per month.</p>
