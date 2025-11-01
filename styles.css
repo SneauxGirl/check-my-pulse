@@ -537,7 +537,7 @@ premium__list {
     width: 140px;
 }
 
-.footer__left p a {
+.footer__signUp-button {
     color: #080c16;
     text-decoration: none;
     border: 2px solid #1fe374;
@@ -551,7 +551,7 @@ premium__list {
 }
 
 @media screen and (max-width: 850px) {
-    .footer__left p a {
+    .footer__signUp-button {
         color: #080c16;
         text-decoration: none;
         border: 2px solid #1fe374;
