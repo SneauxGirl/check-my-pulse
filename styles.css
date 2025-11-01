@@ -331,10 +331,7 @@ premium__list {
     padding: .75rem;
     width: 200px;
     margin: 0.75rem;
-
 }
-
-/* hover effect - no padding*/
 
 .business__tagline,
 .premium__tagline  {
@@ -545,7 +542,7 @@ premium__list {
     margin: 0;
     width: 175px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -555,15 +552,19 @@ premium__list {
         text-decoration: none;
         border: 2px solid #1fe374;
         background-color: #1fe374;
-        padding: 1rem auto;
+        padding: 1rem;
         margin: 0.5rem;
         width: 100%;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
     }
 }
- /* how do I make this expand? */
+.footer__signUp-button:hover {
+    padding: 1.25rem 2.125rem;
+    width: 200px;
+    margin: 0.75rem;
+}
 
 .footer__column {
     display: flex;
@@ -580,7 +581,7 @@ premium__list {
     }
 }
 
-.footer__column ul {
+.footer__list {
     list-style: none;
     color: #fcfcfc;
     font-weight: 700;
@@ -589,7 +590,7 @@ premium__list {
     gap: 1.2rem;
 }    
 
-.footer__column ul li a{
+.footer__list-anchor{
     text-decoration: none;
     color: #1fe374;
     font-weight: 300;
@@ -608,13 +609,12 @@ premium__list {
         padding: 0 0 5rem 0;
     }
 }
-/* figure out correct padding at each size */
 
 .footer__legal-links a {
     color: #d6dae5;
 }
 
-.footer__column a:hover,
-.footer__legal-links a:hover {
+.footer__list-anchor:hover,
+.footer__legal-anchor:hover {
     color: #fcfcfc;
 }
