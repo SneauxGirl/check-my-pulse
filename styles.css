@@ -77,6 +77,16 @@ body, html {
     margin: 0;
     padding: 0;
 }
+.nav__large-pricing {
+    text-decoration: none;
+    color: #080c16;
+}
+
+.nav__large-card{
+    border: 2px solid,#00ad6a;
+    padding: 0.45rem 1rem;
+    margin: 0.25rem;
+}
 
 .nav__large-anchor {
     text-decoration: none;
@@ -88,21 +98,7 @@ body, html {
     color:#080c16;
 }
 
-.nav__large-pricing {
-    text-decoration: none;
-    color: #080c16;
-}
-
-.nav__large-signUp {
-    border: 2px solid,#00ad6a;
-    padding: 0.45rem 1rem;
-}
-
-/* Animation?? How do I move this up and to the right and set the background to gray?
-.nav__large-signUp:hover,
-.nav__large-signUp:focus {
-    animation: ;
-} */
+/* ask about stacked card effect */
 
 @media screen and (max-width: 850px) {
     .nav__large {
@@ -214,7 +210,6 @@ body, html {
     }
 }
 
-
 .basics__column,
 .business__column,
 .premium__column {
@@ -232,8 +227,6 @@ body, html {
     font-size: 1rem;
     font-weight: 350;
 }
-
-/* STILL NOT quite balanced - Issue with Basics. Also need to left-align each */
 
 .basics__container {
     padding: 0 2rem;
@@ -335,7 +328,7 @@ premium__list {
 
 .business__anchor:hover .business__button,
 .premium__anchor:hover .premium__button {
-    padding: 0.75rem;
+    padding: .75rem;
     width: 200px;
     margin: 0.75rem;
 
