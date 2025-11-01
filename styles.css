@@ -11,8 +11,6 @@ body, html {
     min-width: 486px; 
 }
 
-/*how do I set a min-width for the whole site? */
-
 .header {
     position: relative;
     display: flex;
@@ -22,16 +20,14 @@ body, html {
     padding: 3rem 1.5rem;
 }
 
-/* Header  - get rid of padding-bottom - but where is it coming from??? */
-
 @media screen and (max-width: 850px) {
-    header {
+    .header {
         background-color: #fcfcfc;
         padding: 1.5rem 0 0 0;
     }
 }
 
-/* Nav Lg Working - to do: Tab and Small - 750 and 1000 break */
+/* Nav Lg Working - to do: Tab and Small - 850 and 1000 break */
 .nav__block {
     display: flex;
     justify-content: space-between;
@@ -70,7 +66,6 @@ body, html {
     padding-left: 5rem;
     min-width: 540px;
 }
-/* how to make this solid and slide under the logo - wrap of some sort?? */
 
 .nav__large-list { 
     display: flex;
@@ -88,8 +83,7 @@ body, html {
     color: #00ad6a;
 }
 
-/* difference between hover and focus? */
-.nav__large-anchor:hover 
+.nav__large-anchor:hover, 
 .nav__large-anchor:focus {
     color:#080c16;
 }
@@ -127,12 +121,12 @@ body, html {
 } /* needs help with weird toggle button */
 
 
-.main   {
+.main {
     position:relative;
     margin: 0;
 }
 
-.hero__container{
+.hero__container {
     display: flex;
     justify-content: center;
     padding-bottom: 2.5rem;
@@ -187,18 +181,13 @@ body, html {
     justify-content: center;
 }
 
-.plan__container {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-}
-
 .plan__blocks {
     display: flex;
     align-items: center;
     line-height: 150%;
     font-size: 1rem;
     font-weight: 350;
+    max-width: 1200px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -207,8 +196,24 @@ body, html {
         flex-direction: column;
         gap: 2rem;
         padding: 0 1.5rem;
+        max-width: 850px;
     }
 }
+
+.basics,
+.business,
+.premium {
+    width: calc(100%/3);
+}
+
+@media screen and (max-width: 1000px) {
+    .basics,
+    .business,
+    .premium {
+        width: 100%;
+    }
+}
+
 
 .basics__column,
 .business__column,
@@ -216,7 +221,6 @@ body, html {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    flex: 1 1 auto;
     height: auto;
 }
 
@@ -255,11 +259,21 @@ premium__list {
     font-weight: 620;
 }
 
-
 @media screen and (max-width: 1000px) { 
     .basics__header {
         text-align: center;
     }
+}
+
+.basics__header-break {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .basics__header-break {
+        display: inline;
+    }
+    
 }
 
 .basics__anchor {
@@ -382,7 +396,7 @@ premium__list {
     padding: 0 2rem;
 }
 
-.premium__plan h2 {
+.premium__header {
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 1.0;
@@ -450,11 +464,16 @@ premium__list {
 }
 /* these are not shrinking the way I want them too */
 
-.faq__list-item{
-    flex: 1 1 auto;
+.faq__list-item {
     line-height: 1.6rem;
     padding: 1.1rem 0;
-    max-width: 580px;
+    width: calc(50% - 10px)
+}
+
+@media screen and (max-width: 850px) {
+    .faq__list-item {
+        width: 100%;
+    }
 }
 
 .faq__question {
@@ -468,7 +487,7 @@ premium__list {
     margin: 0;
 }
 
-footer {
+.footer {
     background: #080c16;
     color: #00ad6a;
     text-decoration: none;
@@ -478,6 +497,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .footer__container {
     max-width: 1200px;
     padding: 0 1.5rem 0 1.5rem;
@@ -498,7 +518,6 @@ footer {
         flex-direction: column;
     }
 }
-/* address spacing at 750-1000 */
 
 .footer__left {
     display: flex;
@@ -514,7 +533,7 @@ footer {
     }
 }
 
-.footer__logo-img{
+.footer__logo-img {
     width: 140px;
 }
 
