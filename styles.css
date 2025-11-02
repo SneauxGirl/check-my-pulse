@@ -33,6 +33,7 @@ body, html {
     justify-content: space-between;
     max-width: 1150px;
     width: 100%;
+    margin: 0.5rem 2.5rem;
 }
 .nav__logo {
     display: flex;
@@ -49,7 +50,8 @@ body, html {
         align-items: center;
         justify-items: end;
         padding: 0;
-        margin: 0
+        margin: 0;
+        border: 0;
     }
 }
 
@@ -59,6 +61,8 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+@media
 /* remove horizontal padding and border from image and how to toggle between menus? */
 
 .nav__large {
