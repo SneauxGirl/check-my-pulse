@@ -533,37 +533,42 @@ premium__list {
     width: 140px;
 }
 
+@media screen and (max-width:1000px) {
+    .footer__signUp {
+        height: 72px
+    }
+}
+
 .footer__signUp-button {
     color: #080c16;
     text-decoration: none;
     border: 2px solid #1fe374;
     background-color: #1fe374;
     padding: 1rem 2rem;
-    margin: 0;
+    margin: 0.5rem 0;
     width: 175px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
+    .footer__button,
     .footer__signUp-button {
-        color: #080c16;
-        text-decoration: none;
-        border: 2px solid #1fe374;
-        background-color: #1fe374;
-        padding: 1rem;
-        margin: 0.5rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
         width: 100%;
-        text-align: center;
-        font-size: 1.1rem;
-        font-weight: 600;
+        max-width: 400px;
     }
 }
+
 .footer__signUp-button:hover {
-    padding: 1.25rem 2.125rem;
-    width: 200px;
-    margin: 0.75rem;
+        font-size: 1.05rem;
+        padding: 1.25rem 2.25rem;
+        margin: 0.25rem 0;
 }
 
 .footer__column {
