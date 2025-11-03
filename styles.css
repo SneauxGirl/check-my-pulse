@@ -17,7 +17,7 @@ body, html {
     align-content: center;
     justify-content: center;
     margin: 0;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -38,7 +38,6 @@ body, html {
 .nav__logo {
     display: flex;
     align-items: center;
-    padding-right: 2.5rem;
 }
 
 .nav__large-button-container {
@@ -47,22 +46,32 @@ body, html {
 @media screen and (max-width: 850px) {
     .nav__large-button-container {
         display: flex;
-        align-items: center;
+        align-content: center;
         justify-items: end;
         padding: 0;
-        margin: 0;
-        border: 0;
     }
+}
+
+.nav__large-button {
+    border: none;
+    background: none;
+    padding: 0 .75rem;
+}
+
+.nav__large-button:hover {
+    border: 1px solid #1fe374;
+
 }
 
 .nav__large-button-img {
     max-width: 35px;
+    max-height: 35px;
     display: block;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-@media
 /* remove horizontal padding and border from image and how to toggle between menus? */
 
 .nav__large {
@@ -74,7 +83,7 @@ body, html {
 .nav__large-list { 
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2.2rem;
     list-style: none;
     font-size: 1rem;
     font-weight: 650;
@@ -139,7 +148,7 @@ body, html {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
     .hero__container {
         display: flex;
         padding-bottom: 0;
@@ -167,12 +176,13 @@ body, html {
     font-size: 1.1rem;
     line-height: 150%;
     margin-bottom: 0;
+    padding: 0 1.5rem;
 }
 
 @media screen and (max-width: 850px) {
     .hero__header {
-        font-size: 3rem;
         padding: 2rem 0 1.5rem 0;
+        font-size: 3rem;
     }
 }
 
@@ -570,15 +580,16 @@ premium__list {
 }
 
 .footer__signUp-button:hover {
-        font-size: 1.05rem;
-        padding: 1.25rem 2.25rem;
-        margin: 0.25rem 0;
+    font-size: 1.05rem;
+    padding: 1.25rem 2.25rem;
+    margin: 0.25rem 0;
 }
 
 .footer__column {
     display: flex;
     gap: 2rem;
     font-size: 1.1rem;
+    text-indent: -1.25em;
 }
 
 @media screen and (max-width: 1000px) {
@@ -596,8 +607,14 @@ premium__list {
     font-weight: 700;
     display: flex;
     flex-direction: column;
+    align-content: center;
     gap: 1.2rem;
+    padding: none;
 }    
+
+.footer__list-item {
+    text-indent: -1.25em;
+}
 
 .footer__list-anchor{
     text-decoration: none;
